@@ -6,7 +6,7 @@ function Portfolio() {
   const [selectedType,setSelectedType]=useState('All')
   const projects = [
     { title: "ActionX",link:'https://auctionxa.vercel.app/', type: "web development", image:   avatar   },
-    { title: "Netflix GPT",link:'https://netflix-gpts-o6dp.vercel.app ',  type: "web development", image:   avatar  },
+    { title: "Netflix GPT",link:'https://netflix-gpts-o6dp.vercel.app',  type: "web development", image:   avatar  },
     { title: "CalorieMate"   ,type: "Mobile Application", image:   avatar   },
   ];
 
@@ -72,7 +72,7 @@ function Portfolio() {
             </div> */}
 
 
-            <GridDesign index={index} title={item.title} type={item.type} image={item.image} />
+            <GridDesign index={index} title={item.title} type={item.type} image={item.image} link={item.link} />
           </>
         ))
             ):(
