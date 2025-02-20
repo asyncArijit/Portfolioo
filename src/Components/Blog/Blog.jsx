@@ -7,7 +7,7 @@ function Blog() {
     {
       title:
         "Beginner's Guide: Implementing Redis Caching in Golang on Windows",
-      link: "https://drive.google.com/file/d/1fFKRcXTEgr-38DqCNhNgf0oiyBXU8rJ-/view?usp=sharing",
+      link: "https://dev.to/arijit_das_24c46c6f02b06b/how-to-implement-redis-caching-in-golang-for-beginners-a-step-by-step-guidewindows-edition-1g1a",
       image: avatar,
       content:
         "In this post, I'll walk you through how to set up and use Redis caching in a Golang project. This setup helps in reducing database queries and improving performance by caching frequently requested data.",
