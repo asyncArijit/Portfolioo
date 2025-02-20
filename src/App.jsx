@@ -8,7 +8,7 @@ function App() {
  
   return (
     <>
-      <div style={{width:"100vw",height:"100vh",padding: "50px 200px", boxSizing: "border-box"   } } >
+      <div style={{width:"100vw",minHeight:"100vh",padding: "50px 200px", boxSizing: "border-box"   } } >
         <Home/> 
       </div>
         

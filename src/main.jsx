@@ -22,6 +22,13 @@ import {FONTS,COLORS} from './utils/contants.js'
   root.style.setProperty("--text-color", COLORS.TEXT);
   root.style.setProperty("--border-color", COLORS.BORDER);
   root.style.setProperty("--shadow-color", COLORS.SHADOW);
+  root.style.setProperty("--gray-color", COLORS.GRAY);
+  root.style.setProperty("--green-color", COLORS.GREEN);
+  root.style.setProperty("--light_gray-color", COLORS.LIGHT_GRAY);
+  root.style.setProperty("--gradient_border-color", COLORS.GRADIENT_BORDER);
+  root.style.setProperty("--text_white-color", COLORS.TEXT_WHITE);
+  root.style.setProperty("--orange_yellow_crayola-color", COLORS.GOLD);
+  root.style.setProperty("--background2-color", COLORS.BACKGROUND2);
  
 
 createRoot(document.getElementById("root")).render(
@@ -29,3 +36,6 @@ createRoot(document.getElementById("root")).render(
     <App />
   </StrictMode>
 );
+
+
+ 
