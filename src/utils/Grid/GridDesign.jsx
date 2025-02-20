@@ -4,9 +4,11 @@ import './Grid.css'
 function GridDesign({image,index,title,type,decription,link,mode}) {
   const handleGoTo = (link) => {
     console.log(mode)
-    
+    if(link){
       window.open(link, '_blank')
     
+    }
+  
   }
   return (
     <div key={index}

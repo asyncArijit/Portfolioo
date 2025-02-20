@@ -96,10 +96,10 @@ function Home() {
 
           {/* socal media */}
           <div className="social-media-container">
-            <ImLinkedin size={20} />
-            <VscGithub  size={20}/>
-            <FaSquareXTwitter  size={20}/>
-            <BiLogoDevTo  size={20}/>
+            <ImLinkedin size={20} onClick={()=>window.open("https://www.linkedin.com/in/arijitdas1310",'_blank')} />
+            <VscGithub  size={20} onClick={()=>window.open("https://github.com/arijitdas13105",'_blank')}/>
+            <FaSquareXTwitter  size={20} onClick={()=>window.open("https://x.com/AsyncArijit",'_blank')}/>
+            <BiLogoDevTo  size={20} onClick={()=>window.open("https://dev.to/arijit_das_24c46c6f02b06b",'_blank')}/>
           </div>
         </div>
 
