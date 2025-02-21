@@ -15,6 +15,15 @@
     transform: scale(1.05);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+     
+  }
+  .x_grid_item:hover .x_grid_item_content{
+    /* display: none; */
+    opacity: 0;
+  }
+  .x_grid_item:hover .x_grid_item_image{
+    /* display: none; */
+    opacity: 0.5;
   }
    
   /* Image container */
@@ -58,3 +67,119 @@
     -webkit-line-clamp: 3;      
           
    }
+
+   @media (max-width: 480px) {
+    .x_grid_item {
+      padding: 10px 0px;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Container for Technologies (Initially Hidden) */
+.x_grid_technologies {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.8);  */
+  background: rgba(0, 0, 0, 0.9);
+  color: white  ;
+  
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Show Technologies on Hover */
+.x_grid_item:hover .x_grid_technologies {
+  transform: translateY(0);
+  opacity: 1;
+ }
+
+/* Style for Each Tech Item */
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* padding: 5px 10px; */
+  border-radius: 5px;
+  }
+.technologies_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px ;
+ }
+/* Icons Styling */
+.tech-item svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-item:hover svg {
+  transform: scale(1.2);
+}
+.tech_name_text{
+  color: var(--text_white-color) ! important;
+  }
+/* Responsive: Stack Icons in Two Rows on Mobile */
+@media (max-width: 480px) {
+  .x_grid_technologies {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .tech-item {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+
+.x_grid_type {
+  display: inline-block;
+  font-size:7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px  14px  ;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  color: var(--text_white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 5px;
+}
+
+/* Change style slightly on hover */
+.x_grid_item:hover .x_grid_type {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .x_grid_type {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .x_grid_type {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}

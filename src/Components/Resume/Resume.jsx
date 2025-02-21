@@ -43,7 +43,7 @@ function Resume() {
                 <h4 className="h4 timeline-item-title"> Mobile App Developer Intern</h4>
                 <p className="timeline-text">CoRider</p>
                 {/* <span data-start-date="2024-07-01" data-end-date="present">Aug, 2024 — Present &nbsp; • <span className="duration">7 mos</span> */}
-                <span data-start-date="2024-12-01" data-end-date="2024-12-31" className="education_year">December, 2025 &nbsp;  
+                <span data-start-date="2024-12-01" data-end-date="2024-12-31" className="education_year">December, 2024 &nbsp;  
                     <p className="timeline-text"><i>Bangalore, India</i></p>
                     <ul className="timeline-text">
                         <li>Crafted intuitive and visually appealing UI screens in React Native, elevating user experience and app engagement.</li>
