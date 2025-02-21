@@ -340,7 +340,7 @@ li {
 
 .resume-container .timeline-item {
     position: relative;
-  }
+   }
 
 /* .timeline-item:after { 
     content: ""; 
@@ -367,7 +367,11 @@ li {
     border-radius: 50%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 22%);;
   }
-
+@media(max-width: 480px){
+  .resume-container .timeline-item:after {
+    left: -32px;
+  }
+}
 @media (min-width: 580px){ 
   .timeline-item:after { 
     height: 8px; 

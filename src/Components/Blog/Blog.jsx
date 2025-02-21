@@ -1,6 +1,6 @@
 import React from "react";
 import GridDesign from "../../utils/Grid/GridDesign";
-import avatar from "../../assets/my_avatar.jpg";
+import redis_go from "../../assets/redis-go.avif";
 
 function Blog() {
   const BlogContents = [
@@ -8,10 +8,18 @@ function Blog() {
       title:
         "Beginner's Guide: Implementing Redis Caching in Golang on Windows",
       link: "https://dev.to/arijit_das_24c46c6f02b06b/how-to-implement-redis-caching-in-golang-for-beginners-a-step-by-step-guidewindows-edition-1g1a",
-      image: avatar,
+      image: redis_go,
       content:
         "In this post, I'll walk you through how to set up and use Redis caching in a Golang project. This setup helps in reducing database queries and improving performance by caching frequently requested data.",
     },
+    // {
+    //   title:
+    //     "The Future of Cross-Platform Apps: Flutter’s Role in 2024 and Beyond",
+    //   link: "link2",
+    //   image: avatar,
+    //   content:
+    //     "Cross-platform app development has become a buzzword in the tech world, and for a good reason. With businesses needing to target multiple devices and platforms, frameworks like Flutter are transforming the way developers approach software projects. As we move into 2024, Flutter’s importance continues to grow, promising new opportunities for developers and enterprises alike. So, what does the future hold for Flutter? And why should businesses keep an eye on it?",
+    // },
     // {
     //   title:
     //     "The Future of Cross-Platform Apps: Flutter’s Role in 2024 and Beyond",

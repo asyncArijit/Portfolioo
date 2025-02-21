@@ -1,3 +1,29 @@
+
+
+.app-container {
+  width: 100vw;  /* Default for desktop */
+  min-height: 100vh;
+  padding: 50px 200px;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .app-container {
+    padding: 30px 100px; /* Reduce padding for tablets */
+  }
+}
+
+/* 📌 Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .app-container {
+    width: 100%;  
+    min-height: 100%;   
+    padding: 10px;   
+  }
+}
+
+
+
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +66,4 @@
 .read-the-docs {
   color: #888;
 } */
+

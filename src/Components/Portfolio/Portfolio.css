@@ -33,3 +33,17 @@ margin: 0;
   .portfolio_category_item.active  {
      color: var(--green-color);
   }
+
+
+  @media (max-width: 480px) {
+    .portfolio_grid_container {
+      grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+    .portfolio_category_ul{
+      display: flex;
+      list-style-type:none;
+      gap: 10px;
+      justify-content: flex-start;
+       padding: 0; margin: 0;
+    }
+  }
