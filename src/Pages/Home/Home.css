@@ -55,13 +55,58 @@
 .avatar-container{
     width: 150px;
     height: 150px;
-
+    position: relative;
 }
 .avatar{
     width: 100%;
     height: 100%;
     border-radius: 20%;
     object-fit: cover;
+    
+}
+/* @keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+  
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+} */
+
+@keyframes pulse{
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0 0px rgba(136, 196, 25, 0.2);
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.active-status {
+  height: 9px;
+  width: 9px;
+  background-color: rgb(57, 255, 20);
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+  animation: pulse 1.5s ease-in-out infinite;
 }
 .name_profession{
   display: flex;
