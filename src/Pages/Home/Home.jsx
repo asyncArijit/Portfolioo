@@ -57,10 +57,11 @@ function Home() {
           </div>
             <div className="avatar-container">
               <img className="avatar" src={myImage} alt="my avatar" />
+              <span className="active-status" title="Available for work!"></span>
             </div>
             <div className="name_profession">
               <span className="myName">Arijit Das</span>
-              <span className="myProfession">full Stack Developer</span>
+              <span className="myProfession">Full Stack Developer</span>
             </div>
           </div>
 
