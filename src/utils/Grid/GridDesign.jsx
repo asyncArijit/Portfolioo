@@ -12,7 +12,8 @@ function GridDesign({image,index,title,type,decription,link,mode,technologies}) 
   }
   return (
     <div key={index}
-     className="x_grid_item" 
+    //  className="x_grid_item" 
+    className={`x_grid_item ${technologies ? "with-hover" : "no-hover"}`} 
     //  className={`x_grid_item ${mode=='BLOG' ? ' clickable':''}`} 
     onClick={()=>handleGoTo(link)} >
     <div className="x_grid_item_image_container">
@@ -27,7 +28,20 @@ function GridDesign({image,index,title,type,decription,link,mode,technologies}) 
 
 
     {/* Technologies Section (Hidden by default, appears on hover) */}
-    <div className="x_grid_technologies">
+    
+     {/* <div className="x_grid_technologies">
+    <div className="technologies_list">
+        {technologies?.map((tech, idx) => (
+          <div key={idx} className="tech-item">
+            {tech.icon}
+            <span className='tech_name_text'>{tech.name}</span>
+          </div>
+        ))}
+        </div>
+      </div> */}
+
+      {technologies &&(
+        <div className="x_grid_technologies">
     <div className="technologies_list">
         {technologies?.map((tech, idx) => (
           <div key={idx} className="tech-item">
@@ -37,6 +51,7 @@ function GridDesign({image,index,title,type,decription,link,mode,technologies}) 
         ))}
         </div>
       </div>
+      )}
 
       {/* <div className="technologies_overlay">
         <div className="technologies_list">

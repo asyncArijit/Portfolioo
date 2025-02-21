@@ -11,17 +11,17 @@
     /* border: 1px solid red; */
   }
   
-  .x_grid_item:hover {
+  .x_grid_item.with-hover:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
      
   }
-  .x_grid_item:hover .x_grid_item_content{
+  .x_grid_item.with-hover:hover .x_grid_item_content{
     /* display: none; */
     opacity: 0;
   }
-  .x_grid_item:hover .x_grid_item_image{
+  .x_grid_item.with-hover:hover .x_grid_item_image{
     /* display: none; */
     opacity: 0.5;
   }
@@ -98,10 +98,19 @@
 }
 
 /* Show Technologies on Hover */
-.x_grid_item:hover .x_grid_technologies {
+.x_grid_item.with-hover:hover .x_grid_technologies {
   transform: translateY(0);
   opacity: 1;
  }
+ .x_grid_item.no-hover {
+  cursor: pointer;
+ 
+}
+
+.x_grid_item.no-hover:hover {
+  transform: none;
+  box-shadow: none;
+}
 
 /* Style for Each Tech Item */
 .tech-item {
