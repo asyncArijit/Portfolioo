@@ -48,7 +48,7 @@ function Portfolio() {
     {
       title: "Netflix GPT",
       description:'AI Movie Recommender ',
-      link: "https://netflix-gpts-o6dp.vercel.app",
+      link: "https://netflixgpt-new.vercel.app",
       type: "web development",
       image: netflixGPT,
       technologies: [

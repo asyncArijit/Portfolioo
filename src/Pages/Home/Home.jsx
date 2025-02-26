@@ -24,7 +24,7 @@ function Home() {
   const navItems = [
     { key: "about", name: "About" },
     { key: "resume", name: "Resume" },
-    { key: "portfolio", name: "Portfolio" },
+    { key: "portfolio", name: "Projects" },
     { key: "blog", name: "Blog" },
     // {key:"contact",name:"Contact"},
   ];
