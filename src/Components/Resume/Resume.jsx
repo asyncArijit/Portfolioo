@@ -81,7 +81,7 @@ function Resume() {
         </ol>
     </section>
     <div className='download_cv_container'
-     onClick={()=>window.open('https://drive.google.com/file/d/1jeXt3VGCQSGoc81hbAnidXkbww139Uul/view?usp=sharing','_blank')} >
+     onClick={()=>window.open('https://drive.google.com/file/d/1XlGKTXZ-J_5rZEbg4ZAuVSTyBaQK2cEt/view?usp=sharing','_blank')} >
     
     <IoDocumentSharp  className='download_cv_icon' />
       <span className='download_cv_text'> Download CV</span>
