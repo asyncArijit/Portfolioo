@@ -1,6 +1,7 @@
 import React from "react";
 import GridDesign from "../../utils/Grid/GridDesign";
 import redis_go from "../../assets/redis-go.avif";
+import OTA from "../../assets/OTA.avif";
 
 function Blog() {
   const BlogContents = [
@@ -11,6 +12,14 @@ function Blog() {
       image: redis_go,
       content:
         "In this post, I'll walk you through how to set up and use Redis caching in a Golang project. This setup helps in reducing database queries and improving performance by caching frequently requested data.",
+    },
+    {
+      title:
+        "Building Your Own OTA Update System for React Native (Post App Center Era)",
+      link: "https://dev.to/arijit_das_24c46c6f02b06b/building-your-own-ota-update-system-for-react-native-post-app-center-era-5hll",
+      image: OTA,
+      content:
+        "With Microsoft officially shutting down App Center, many developers like me were left looking for alternatives for pushing Over-The-Air (OTA) updates in React Native",
     },
     // {
     //   title:
