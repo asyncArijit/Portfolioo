@@ -3,6 +3,7 @@ import avatar from "../../assets/my_avatar.avif";
 import auctionx from "../../assets/auctionx.avif";
 import caloriemate from "../../assets/caloriemate.avif";
 import netflixGPT from "../../assets/netflixGPT.avif";
+import Feature_graphic from "../../assets/Feature_graphic.png";
 import "./Portfolio.css";
 import GridDesign from "../../utils/Grid/GridDesign";
 
@@ -58,8 +59,9 @@ function Portfolio() {
          
       ],
     },
-    { title: "CalorieMate", type: "Mobile Application", image: caloriemate,
+    { title: "Calybe AI", type: "Mobile Application", image: caloriemate,
       description:'AI Fitness Tracker App for Fitness Enthusiasts',
+      link: "https://play.google.com/store/apps/details?id=com.caloriemate&pcampaignid=web_share",
     technologies: [
       { name: "React Native", icon: <TbBrandReactNative color="#00B9D8" size={25} /> },
       { name: "MongoDB", icon: <SiMongodb  color="#199555"   size={25} /> },
