@@ -91,7 +91,7 @@ function Resume() {
               data-end-date="2024-12-31"
               className="education_year"
             >
-              December, 2024 &nbsp;
+              December, 2024 — April, 2025 &nbsp;{" "} &nbsp;
               <p className="timeline-text">
                 <i>Bangalore, India</i>
               </p>
@@ -189,7 +189,7 @@ function Resume() {
         className="download_cv_container"
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1-a6pFvruCKN0A6qFAGzyaC5IQ6FZ9r4i/view?usp=sharing",
+            "https://drive.google.com/file/d/16FUX1LUwfy9c4ZZAqvK6yne0AGxRW96l/view?usp=sharing",
             "_blank"
           )
         }
