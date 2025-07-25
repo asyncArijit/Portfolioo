@@ -113,7 +113,7 @@ function Home() {
               // size={20}
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/arijitdas1310",
+                  "https://www.linkedin.com/in/asyncarijit",
                   "_blank"
                 )
               }
@@ -122,7 +122,7 @@ function Home() {
                className="icon-class"
                // size={20}
               onClick={() =>
-                window.open("https://github.com/arijitdas13105", "_blank")
+                window.open("https://github.com/asyncArijit", "_blank")
               }
             />
             <FaSquareXTwitter
