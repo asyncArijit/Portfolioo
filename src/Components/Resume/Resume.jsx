@@ -189,7 +189,7 @@ function Resume() {
         className="download_cv_container"
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1QJPSa4y-ox7PfSmjoCETMfeRJqLbs-FM/view?usp=sharing",
+            "https://drive.google.com/file/d/1n_7TppP_v3DthGZ2F8THRHhgj9MisDF_/view?usp=sharing",
             "_blank"
           )
         }
@@ -202,4 +202,5 @@ function Resume() {
 }
 
 export default Resume;
+
 
