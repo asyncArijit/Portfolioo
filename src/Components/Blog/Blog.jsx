@@ -2,7 +2,7 @@ import React from "react";
 import GridDesign from "../../utils/Grid/GridDesign";
 import redis_go from "../../assets/redis-go.avif";
 import OTA from "../../assets/OTA.avif";
-
+import RNdepth from '../../assets/RNdepth.png'
 function Blog() {
   const BlogContents = [
     {
@@ -20,6 +20,14 @@ function Blog() {
       image: OTA,
       content:
         "With Microsoft officially shutting down App Center, many developers like me were left looking for alternatives for pushing Over-The-Air (OTA) updates in React Native",
+    },
+      {
+      title:
+        "Understanding React Native Internals ",
+      link: "https://dev.to/arijit_das_24c46c6f02b06b/i-used-ai-to-learn-react-native-deeply-so-you-dont-have-to-4jpo",
+      image: RNdepth,
+      content:
+        "Ever wondered how React Native truly works under the hood? We're breaking down the magic that connects your JavaScript to native performance.",
     },
     // {
     //   title:
