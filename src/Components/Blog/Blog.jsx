@@ -3,6 +3,8 @@ import GridDesign from "../../utils/Grid/GridDesign";
 import redis_go from "../../assets/redis-go.avif";
 import OTA from "../../assets/OTA.avif";
 import RNdepth from '../../assets/RNdepth.png'
+import RNMap from '../../assets/RNMAP.png'
+
 function Blog() {
   const BlogContents = [
     {
@@ -28,6 +30,14 @@ function Blog() {
       image: RNdepth,
       content:
         "Ever wondered how React Native truly works under the hood? We're breaking down the magic that connects your JavaScript to native performance.",
+    },
+    {
+      title:
+        "Google Maps Integration in React Native: Complete Guide",
+      link: "https://dev.to/asyncarijit/stop-struggling-with-maps-in-react-native-heres-the-complete-guide-28ii",
+      image: RNMap,
+      content:
+        "☕ How I Actually Got Google Maps Working in React Native.",
     },
     // {
     //   title:
