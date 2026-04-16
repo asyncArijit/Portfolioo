@@ -11,11 +11,11 @@ import Portfolio from "../../Components/Portfolio/Portfolio";
 import Blog from "../../Components/Blog/Blog";
 import Contact from "../../Components/Contact/Contact";
 import Resume from "../../Components/Resume/Resume";
-import { IoIosArrowDropdownCircle,IoIosArrowDropupCircle  } from "react-icons/io";
+import { IoIosArrowDropdownCircle, IoIosArrowDropupCircle } from "react-icons/io";
 
 function Home() {
   const [activeSection, setActiveSection] = React.useState("about");
-  const[isContactOpen,setIsContactOpen]=React.useState(false) 
+  const [isContactOpen, setIsContactOpen] = React.useState(false)
   const handleChangeContent = (content) => {
     setActiveSection(content);
     console.log(content);
@@ -49,12 +49,12 @@ function Home() {
         {/* left part */}
         <div className="left-details">
           <div className="me-short-details">
-          <div className="arrow_class" onClick={()=>setIsContactOpen(!isContactOpen)}>
-          {/* <IoIosArrowDropdownCircle size={19}     /> */}
-        {
-          isContactOpen?<IoIosArrowDropupCircle color="#80FF66" className="dropUpDown_clss"   />:<IoIosArrowDropdownCircle className="dropUpDown_clss"    color="yellow" />
-        }
-          </div>
+            <div className="arrow_class" onClick={() => setIsContactOpen(!isContactOpen)}>
+              {/* <IoIosArrowDropdownCircle size={19}     /> */}
+              {
+                isContactOpen ? <IoIosArrowDropupCircle color="#80FF66" className="dropUpDown_clss" /> : <IoIosArrowDropdownCircle className="dropUpDown_clss" color="yellow" />
+              }
+            </div>
             <div className="avatar-container">
               <img className="avatar" src={myImage} alt="my avatar" />
               <span className="active-status" title="Available for work!"></span>
@@ -109,7 +109,7 @@ function Home() {
           {/* socal media */}
           <div className="social-media-container">
             <ImLinkedin
-            className="icon-class"
+              className="icon-class"
               // size={20}
               onClick={() =>
                 window.open(
@@ -119,20 +119,20 @@ function Home() {
               }
             />
             <VscGithub
-               className="icon-class"
-               // size={20}
+              className="icon-class"
+              // size={20}
               onClick={() =>
                 window.open("https://github.com/asyncArijit", "_blank")
               }
             />
             <FaSquareXTwitter
-               className="icon-class"
-               // size={20}
+              className="icon-class"
+              // size={20}
               onClick={() => window.open("https://x.com/AsyncArijit", "_blank")}
             />
             <BiLogoDevTo
-               className="icon-class"
-               // size={20}
+              className="icon-class"
+              // size={20}
               onClick={() =>
                 window.open(
                   "https://dev.to/arijit_das_24c46c6f02b06b",
@@ -158,9 +158,8 @@ function Home() {
                 {navItems.map((item, index) => (
                   <li
                     // className="nav-list-item"
-                    className={`nav-list-item ${
-                      activeSection === item.key ? "active" : ""
-                    }`}
+                    className={`nav-list-item ${activeSection === item.key ? "active" : ""
+                      }`}
                     key={index}
                     onClick={() => handleChangeContent(item.key)}
                   >

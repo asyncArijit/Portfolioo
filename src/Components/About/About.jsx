@@ -39,11 +39,11 @@ function About() {
       icon: <FaLaptopCode size={40} />,
     },
     {
-        title: "Backend Development",
-        content:
-          "Designing efficient and high performance backend systems optimized for scalability and reliability.",
-        icon: <FaDatabase size={40} />,
-      },
+      title: "Backend Development",
+      content:
+        "Designing efficient and high performance backend systems optimized for scalability and reliability.",
+      icon: <FaDatabase size={40} />,
+    },
 
     {
       title: "System Optimization",
@@ -51,7 +51,7 @@ function About() {
         "Developing robust APIs and optimizing performance to ensure smooth data handling and faster load times.",
       icon: <VscServerProcess size={40} />,
     },
-   
+
   ];
 
   const skillData = [
@@ -172,7 +172,7 @@ function About() {
                     <>
                       <li key={index} className="skill_list_item">
                         <span className="skill_list_item_icon">
-                          
+
                           {item.icon}
                         </span>
                         <span>{item.name}</span>

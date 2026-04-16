@@ -1,82 +1,91 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+:root {
+  /* Core Colors */
+  --bg-dark: #09090b;
+  --bg-card: rgba(24, 24, 27, 0.4);
+  /* Glassmorphic Base */
+  --bg-card-hover: rgba(39, 39, 42, 0.6);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Accents */
+  --accent-primary: #00f0ff;
+  /* Neon Cyan */
+  --accent-secondary: #b026ff;
+  /* Deep Purple */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --accent-glow: 0 0 20px rgba(0, 240, 255, 0.4);
+
+  /* Text */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+
+  /* Borders */
+  --border-glass: 1px solid rgba(255, 255, 255, 0.08);
+  --border-glass-glow: 1px solid rgba(0, 240, 255, 0.3);
+
+  /* Effects */
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  --backdrop-blur: blur(16px);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-   background-color: #121212;
-    
-  /* padding:50px */
-  /* box-sizing: border-box; */
+  font-family: 'Outfit', 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  /* Subtle radial gradient background */
+  background-image: radial-gradient(circle at 15% 50%, rgba(176, 38, 255, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 240, 255, 0.1), transparent 25%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Base Glassmorphic Box utility */
+.glass-box {
+  background: var(--bg-card);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: var(--border-glass);
+  box-shadow: var(--shadow-glass);
+  border-radius: 20px;
+}

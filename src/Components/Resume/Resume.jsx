@@ -73,8 +73,8 @@ function Resume() {
                 </li>
                 <li>
                   Leveraged Zustand for state management and TanStack Query for
-                efficient server data handling, optimizing app performance and
-                scalability.
+                  efficient server data handling, optimizing app performance and
+                  scalability.
                 </li>
               </ul>
             </span>
