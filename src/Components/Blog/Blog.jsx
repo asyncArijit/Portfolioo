@@ -4,6 +4,22 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 const posts = [
   {
+    title: "Google Maps Integration in React Native: Complete Guide",
+    blurb:
+      "How I actually got Google Maps working in React Native end-to-end — the gotchas nobody warns you about.",
+    link: "https://dev.to/asyncarijit/stop-struggling-with-maps-in-react-native-heres-the-complete-guide-28ii",
+    date: "2025",
+    tag: "react native",
+  },
+  {
+    title: "Understanding React Native Internals",
+    blurb:
+      "A deep dive into how React Native bridges your JavaScript to native performance — the architecture under the hood.",
+    link: "https://dev.to/arijit_das_24c46c6f02b06b/i-used-ai-to-learn-react-native-deeply-so-you-dont-have-to-4jpo",
+    date: "2025",
+    tag: "react native",
+  },
+  {
     title: "Building Your Own OTA Update System for React Native",
     blurb:
       "Microsoft sunset App Center; here's a practical alternative for shipping over-the-air updates to React Native apps.",

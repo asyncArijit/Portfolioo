@@ -99,7 +99,7 @@ function Resume() {
 
       <a
         className="cv-link"
-        href="https://drive.google.com/file/d/16FUX1LUwfy9c4ZZAqvK6yne0AGxRW96l/view?usp=sharing"
+        href="https://drive.google.com/file/d/1n_7TppP_v3DthGZ2F8THRHhgj9MisDF_/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
