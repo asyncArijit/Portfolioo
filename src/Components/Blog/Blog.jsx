@@ -1,77 +1,67 @@
 import React from "react";
-import GridDesign from "../../utils/Grid/GridDesign";
-import redis_go from "../../assets/redis-go.avif";
-import OTA from "../../assets/OTA.avif";
-import RNdepth from '../../assets/RNdepth.png'
-import RNMap from '../../assets/RNMAP.png'
+import "./Blog.css";
+import { HiArrowUpRight } from "react-icons/hi2";
+
+const posts = [
+  {
+    title: "Google Maps Integration in React Native: Complete Guide",
+    blurb:
+      "How I actually got Google Maps working in React Native end-to-end — the gotchas nobody warns you about.",
+    link: "https://dev.to/asyncarijit/stop-struggling-with-maps-in-react-native-heres-the-complete-guide-28ii",
+    date: "2025",
+    tag: "react native",
+  },
+  {
+    title: "Understanding React Native Internals",
+    blurb:
+      "A deep dive into how React Native bridges your JavaScript to native performance — the architecture under the hood.",
+    link: "https://dev.to/arijit_das_24c46c6f02b06b/i-used-ai-to-learn-react-native-deeply-so-you-dont-have-to-4jpo",
+    date: "2025",
+    tag: "react native",
+  },
+  {
+    title: "Building Your Own OTA Update System for React Native",
+    blurb:
+      "Microsoft sunset App Center; here's a practical alternative for shipping over-the-air updates to React Native apps.",
+    link: "https://dev.to/arijit_das_24c46c6f02b06b/building-your-own-ota-update-system-for-react-native-post-app-center-era-5hll",
+    date: "2025",
+    tag: "react native",
+  },
+  {
+    title: "Implementing Redis Caching in Golang on Windows",
+    blurb:
+      "Beginner-friendly walkthrough for wiring Redis into a Go project to cut database load on hot read paths.",
+    link: "https://dev.to/arijit_das_24c46c6f02b06b/how-to-implement-redis-caching-in-golang-for-beginners-a-step-by-step-guidewindows-edition-1g1a",
+    date: "2024",
+    tag: "go · redis",
+  },
+];
 
 function Blog() {
-  const BlogContents = [
-    {
-      title:
-        "Beginner's Guide: Implementing Redis Caching in Golang on Windows",
-      link: "https://dev.to/arijit_das_24c46c6f02b06b/how-to-implement-redis-caching-in-golang-for-beginners-a-step-by-step-guidewindows-edition-1g1a",
-      image: redis_go,
-      content:
-        "In this post, I'll walk you through how to set up and use Redis caching in a Golang project. This setup helps in reducing database queries and improving performance by caching frequently requested data.",
-    },
-    {
-      title:
-        "Building Your Own OTA Update System for React Native (Post App Center Era)",
-      link: "https://dev.to/arijit_das_24c46c6f02b06b/building-your-own-ota-update-system-for-react-native-post-app-center-era-5hll",
-      image: OTA,
-      content:
-        "With Microsoft officially shutting down App Center, many developers like me were left looking for alternatives for pushing Over-The-Air (OTA) updates in React Native",
-    },
-      {
-      title:
-        "Understanding React Native Internals ",
-      link: "https://dev.to/arijit_das_24c46c6f02b06b/i-used-ai-to-learn-react-native-deeply-so-you-dont-have-to-4jpo",
-      image: RNdepth,
-      content:
-        "Ever wondered how React Native truly works under the hood? We're breaking down the magic that connects your JavaScript to native performance.",
-    },
-    {
-      title:
-        "Google Maps Integration in React Native: Complete Guide",
-      link: "https://dev.to/asyncarijit/stop-struggling-with-maps-in-react-native-heres-the-complete-guide-28ii",
-      image: RNMap,
-      content:
-        "☕ How I Actually Got Google Maps Working in React Native.",
-    },
-    // {
-    //   title:
-    //     "The Future of Cross-Platform Apps: Flutter’s Role in 2024 and Beyond",
-    //   link: "link2",
-    //   image: avatar,
-    //   content:
-    //     "Cross-platform app development has become a buzzword in the tech world, and for a good reason. With businesses needing to target multiple devices and platforms, frameworks like Flutter are transforming the way developers approach software projects. As we move into 2024, Flutter’s importance continues to grow, promising new opportunities for developers and enterprises alike. So, what does the future hold for Flutter? And why should businesses keep an eye on it?",
-    // },
-    // {
-    //   title:
-    //     "The Future of Cross-Platform Apps: Flutter’s Role in 2024 and Beyond",
-    //   link: "link2",
-    //   image: avatar,
-    //   content:
-    //     "Cross-platform app development has become a buzzword in the tech world, and for a good reason. With businesses needing to target multiple devices and platforms, frameworks like Flutter are transforming the way developers approach software projects. As we move into 2024, Flutter’s importance continues to grow, promising new opportunities for developers and enterprises alike. So, what does the future hold for Flutter? And why should businesses keep an eye on it?",
-    // },
-  ];
   return (
-    <>
-      <div className="portfolio_grid_container">
-        {BlogContents.map((item) => (
-          <>
-            <GridDesign
-              title={item.title}
-              decription={item.content}
-              image={item.image}
-              link={item.link}
-              mode='BLOG'
-            />
-          </>
-        ))}
-      </div>
-    </>
+    <div className="posts">
+      {posts.map((p, i) => (
+        <a
+          key={i}
+          href={p.link}
+          target="_blank"
+          rel="noreferrer"
+          className="post"
+        >
+          <div className="post-meta">
+            <span className="post-date">{p.date}</span>
+            <span className="post-tag">{p.tag}</span>
+          </div>
+          <div className="post-body">
+            <h3 className="post-title">
+              {p.title}
+              <HiArrowUpRight className="post-arrow" />
+            </h3>
+            <p className="post-blurb">{p.blurb}</p>
+          </div>
+        </a>
+      ))}
+    </div>
   );
 }
 
