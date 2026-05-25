@@ -25,6 +25,11 @@
   border-bottom-color: var(--text);
 }
 
+.about-em {
+  color: var(--text);
+  font-weight: 500;
+}
+
 /* SKILLS */
 .skills {
   display: flex;

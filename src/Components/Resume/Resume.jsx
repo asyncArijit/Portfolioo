@@ -5,44 +5,45 @@ import { IoDocumentSharp } from "react-icons/io5";
 const experiences = [
   {
     company: "Aurelion",
-    role: "Mobile App Developer Intern",
+    role: "Mobile App Developer",
     period: "May 2025 — Present",
-    location: "Chennai, India",
+    location: "Chennai, India · Remote",
     bullets: [
-      "Building KittyMagic from scratch in React Native — a social app for organising women's kitty parties.",
-      "Designed responsive UIs and wired complex backend APIs for real-time data sync.",
-      "Using Zustand for state, TanStack Query for server data — kept the app smooth as features grew.",
+      "Building KittyMagic and TripSynk in React Native + TypeScript — project setup, architecture decisions, native modules, and feature work.",
+      "Designed scalable, feature-based modules with atomic + domain-driven design; state via Zustand, TanStack Query, and MMKV; Supabase and Firebase backends.",
+      "Authored a custom Nitro native module for UPI deep-link payments (Android & iOS) and built OCR receipt parsing with a min-cashflow settle-up algorithm.",
+      "Optimised rendering with InteractionManager and native caching; validated performance with Firebase and React Native DevTools.",
     ],
   },
   {
     company: "CoRider",
     role: "Mobile App Developer Intern",
     period: "Dec 2024 — Apr 2025",
-    location: "Bangalore, India",
+    location: "Bangalore, India · Remote",
     bullets: [
-      "Shipped intuitive React Native screens that lifted app engagement.",
-      "Worked across teams to integrate UI with backend services for a smoother end-to-end experience.",
+      "Developed and refined core authentication and ride-sharing features — ride posting, trip discovery — in React Native.",
+      "Integrated Firebase Crashlytics, reducing app crashes by ~15% and improving stability across beta users.",
+      "Optimised screen rendering and API calls with TanStack Query, improving responsiveness on low-end Android devices.",
     ],
   },
   {
     company: "The Investor Diwan",
     role: "Full-Stack Developer Intern",
     period: "Jun 2024 — Sep 2024",
-    location: "Doha, Qatar",
+    location: "Doha, Qatar · Remote",
     bullets: [
-      "Built a responsive student panel in React + Redux + Tailwind across 30+ pages, cutting load time by ~30%.",
-      "Integrated Node.js APIs for cleaner data flow and a smoother user experience.",
-      "Delivered milestones ahead of schedule and contributed to a maintainable, scalable codebase.",
+      "Implemented a responsive UI in React + Redux + Tailwind CSS, improving accessibility across 30+ pages.",
+      "Optimised UI performance, cutting load times by ~30%, and integrated Node.js APIs for efficient data handling.",
     ],
   },
   {
     company: "Sehr Technologies",
     role: "Software Developer Intern",
     period: "Aug 2022 — Oct 2022",
-    location: "Pune, India",
+    location: "Pune, India · Remote",
     bullets: [
-      "Optimised React + Node.js performance for ~25% faster load and longer sessions.",
-      "Designed responsive Tailwind UIs that improved customer satisfaction.",
+      "Streamlined web performance in React.js and Node.js — ~25% faster loads and ~20% longer user sessions.",
+      "Revamped client UIs in Tailwind CSS for better responsiveness and maintainability.",
     ],
   },
 ];
@@ -99,7 +100,7 @@ function Resume() {
 
       <a
         className="cv-link"
-        href="https://drive.google.com/file/d/1n_7TppP_v3DthGZ2F8THRHhgj9MisDF_/view?usp=sharing"
+        href="https://drive.google.com/file/d/1n9hmbeqd64fyVw62C_xlcsCHl8ToGz1o/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
